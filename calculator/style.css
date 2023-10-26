@@ -1,0 +1,83 @@
+.container {
+    width: 255px;
+    height: auto;
+    background-color: black;
+    margin: auto;
+}
+.input {
+    width: 210px;
+    height: 40px;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    text-align: right;
+    display: flex;
+}
+#input {
+    padding-right: 30px;
+    font-size: 120%;
+}
+
+.btnmain {
+    width: 255px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    width: 255px;
+    margin: 0px;
+}
+
+.btnopration1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #f69906;
+    border: 1px;
+    color: white;
+    padding: 0px;
+    margin: 5px;
+}
+
+.btnopration2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #a0a0a0;
+    border: 1px;
+    color: white;
+    padding: 0px;
+    margin: 5px;
+}
+
+.btn1 {
+    width: 50px;
+    height: 50px;
+    background-color: #313131;
+    border: 1px;
+    border-radius: 25px;
+    color: white;
+    padding: 0px;
+    margin: 5px;
+}
+
+.btn0 {
+    width: 115px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}

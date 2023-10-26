@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets Calculate!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input id="input" class="input" type="text">
+        <div class="btnmain">
+            <ul>
+                <li>
+                    <button class="btnopration2 button">AC</button>
+                    <button class="btnopration2 button">%</button>
+                    <button class="btnopration2 button">Del</button>
+                    <button class="btnopration1 button">/</button>
+                </li>
+                <li class="btn2">
+                    <button class="btn btn1 button">7</button>
+                    <button class="btn btn1 button">8</button>
+                    <button class="btn btn1 button">9</button>
+                    <button class="btnopration1 button">X</button>
+                </li>
+                <li>
+                    <button class="btn btn1 button">4</button>
+                    <button class="btn btn1 button">5</button>
+                    <button class="btn btn1 button">6</button>
+                    <button class="btnopration1 button">-</button>
+                </li>
+                <li>
+                    <button class="btn btn1 button">1</button>
+                    <button class="btn btn1 button">2</button>
+                    <button class="btn btn1 button">3</button>
+                    <button class="btnopration1 button">+</button>
+                </li>
+                <li>
+                    <button class="btn btn0 btn1 button">0</button>
+                    <button class="btn btn1 button">.</button>
+                    <button class="btnopration1 button">=</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let string = ""
+        let buttons = document.querySelectorAll('.button')
+        Array.from(buttons).forEach((button)=>{
+            button.addEventListener('click', (e)=> {
+                if(e.target.innerHTML == '='){
+                    string = eval(string)
+                    document.querySelector('input').value = string
+                }
+                else if(e.target.innerHTML == 'AC') {
+                    string = ""
+                    document.querySelector('input').value = string
+                }
+                else if(e.target.innerHTML == 'Del') {
+                    string = string.slice(0, (string.length-1))
+                    document.querySelector('input').value = string
+                }
+                else if(e.target.innerHTML == 'X') {
+                    string = string + '*'
+                    document.querySelector('input').value = string
+                }
+                else {
+                    string = string + e.target.innerHTML
+                    document.querySelector('input').value = string
+                }
+                console.log(e.target)
+            })
+        })
+    </script>
+</body>
+</html>
