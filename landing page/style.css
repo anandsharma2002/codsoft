@@ -1,0 +1,222 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-size: 18px; */
+}
+
+body{
+    background-color: #EBF2FF;
+    font-size: 18px;
+}
+
+.navbar {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    /* border: 1px solid black; */
+    width: 6rem;
+}
+
+.order_food{
+    height: 2rem;
+    font-size: 18px;
+    padding: 0rem 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-image: linear-gradient(90deg, #FB4C36 0%, #DE2575 );
+    color: white;
+}
+
+.section1 {
+    position: relative;
+    /* border: 1px solid black; */
+    padding: 0px 0.4rem;
+}
+
+.imgdiv{
+    width: 95%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.p1{
+    width: 80%;
+    /* max-width: 50%; */
+    font-size: 27px;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.section2{
+    /* border: 1px solid black; */
+    margin: 2rem 0;
+}
+
+.p2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.card2 {
+    /* border: 1px solid red; */
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem auto;
+    border-radius: 8px;
+    background-color: white;
+    padding-bottom: 0.1rem;
+}
+
+.img21 {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.section2 .card2 div {
+    margin: 1rem 0.2rem;
+}
+
+.p21{
+    font-size: 22px;
+}
+
+.section2 .card2 div p span{
+    color: red;
+    
+}
+
+.section2 .div22 {
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.div22 .order_food {
+    margin: auto;
+}
+
+.section3{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.img3{
+    width: 45%;
+    max-width: 400px;
+    height: 100%;
+}
+
+
+.section4 {
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 1rem;
+    
+}
+
+.background_image{
+    width: 90%;
+    max-width: 400px;
+    height: 200px;
+    margin: auto;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    background-image: url(data/background_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background_image div{
+    position: relative;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.section4 h1{
+    top: 30%; left: 15%;
+    color: black;
+    text-align: center;
+}
+
+footer {
+    /* border: 1px solid green; */
+    margin-top: 1rem;
+    background-color: #222;
+    padding: 0.5rem 0.5rem;
+}
+
+footer ul{
+    font-size: 20px;
+    list-style-type: disc;
+    color: white;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+footer ul li {
+    margin: 0.2rem 0;
+    
+}
+
+.section1 .imgdiv .p1 {
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+    
+    .imgdiv {
+        /* position: absolute; */
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img1{
+        width: 400px;
+        height: auto;
+    }
+    .section1 .imgdiv .p1{
+        /* border: 1px solid black; */
+        display: block;
+        display: flex;
+    }
+
+    .section1 .imgdiv .p1 p{
+        margin: auto;
+    }
+    .section1 .p1{
+        display: none;
+    }
+
+    .card {
+        /* border: 1px solid black; */
+        /* display: inline; */
+        margin: auto;
+    }
+    
+    .card2 {
+        width: 50%;
+        float: left;
+        margin: 5px 1rem;
+    }
+
+    .div22 {
+        clear: both;
+    }
+
+    li{
+        width: 40%;
+    }
+    
+}
